@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'CICD Pipeline'
+    return 'CICD Pipeline updated'
 
 if __name__ == '__main__':
     app.run()
