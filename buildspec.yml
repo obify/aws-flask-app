@@ -12,11 +12,11 @@ phases:
   pre_build:
     commands:
       - echo "Installing python dependencies..."
-      - pip install -r aws-flask-app/requirements.txt
+      - pip install -r requirements.txt
   build:
     commands:
       - echo "Running tests..."
-      - cd aws-flask-app/
+      #- cd aws-flask-app/
       - echo "Building Docker image..."
       - echo "$DOCKER_REGISTRY_PASSWORD" | docker login -u "$DOCKER_REGISTRY_USERNAME" --password-stdin "$DOCKER_REGISTRY_URL"
       - docker build -t "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/aws-flask-app:latest" .
