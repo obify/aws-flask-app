@@ -29,4 +29,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: ../aws-flask-app
+  base-directory: .
