@@ -1,6 +1,8 @@
 version: 0.2
 
 env:
+  variables:
+    PACKAGE_NAME: "pensions-app"
   parameter-store:
     DOCKER_REGISTRY_USERNAME: /pensionapp/docker-credentials/username
     DOCKER_REGISTRY_PASSWORD: /pensionapp/docker-credentials/password
@@ -27,3 +29,5 @@ phases:
 artifacts:
   files:
     - '**/*'
+  discard-paths: yes
+  name: $PACKAGE_NAME-$(date +%Y-%m-%d)
