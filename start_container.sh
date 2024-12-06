@@ -5,4 +5,4 @@ set -e
 docker pull ranjan715/aws-flask-app
 
 # Run the Docker image as a container
-docker run -d -p 5000:5000 ranjan715/aws-flask-app:latest
+docker run -d -p 5000:5000 ranjan715/aws-flask-app
