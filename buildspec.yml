@@ -26,8 +26,3 @@ phases:
   post_build:
     commands:
       - echo "Build completed successfully!"
-artifacts:
-  files:
-    - '**/*'
-  discard-paths: yes
-  name: $PACKAGE_NAME-$(date +%Y-%m-%d)
